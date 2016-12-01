@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        tools:context="com.example.harish.geomindr.activity.ebr.EntityBasedReminderActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/atm_white"
+                android:text="@string/atm"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_atm" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/food"
+                android:drawableTop="@drawable/restaurant_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_food"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/hospital"
+                android:drawableTop="@drawable/hospital_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:id="@+id/btn_hospital"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/security_white"
+                android:text="@string/police"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_police"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/mall"
+                android:drawableTop="@drawable/shopping_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_mall"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/medical"
+                android:drawableTop="@drawable/pharmacy_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:id="@+id/btn_pharmacy"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/gym_white"
+                android:text="@string/gym"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_gym"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/bank"
+                android:drawableTop="@drawable/bank_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_bank"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/postal"
+                android:drawableTop="@drawable/post_office_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:id="@+id/btn_postal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/bar_white"
+                android:text="@string/bar"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_bar"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/library"
+                android:drawableTop="@drawable/lib_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_lib"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/movie"
+                android:drawableTop="@drawable/movie_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:id="@+id/btn_movie"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5sp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/stationary_white"
+                android:text="@string/books"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_books"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/gov_off"
+                android:drawableTop="@drawable/office_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:layout_marginEnd="5sp"
+                android:id="@+id/btn_gov"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="75sp"
+                android:layout_weight="1"
+                android:text="@string/petrol"
+                android:drawableTop="@drawable/gas_white"
+                style="@style/button_style"
+                android:background="@color/button_unclicked"
+                android:id="@+id/btn_gas"/>
+        </LinearLayout>
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:dsb_min="100"
+            app:dsb_max="2000"
+            app:dsb_value="1000"
+            app:dsb_progressColor="@color/colorPrimaryDark"
+            app:dsb_indicatorColor="@color/colorPrimaryDark"
+            app:dsb_indicatorFormatter="Radius: %d"
+            android:layout_marginEnd="-13dp"
+            android:layout_marginStart="-13dp"/>
+    </LinearLayout>
+</ScrollView>

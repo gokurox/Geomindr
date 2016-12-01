@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.harish.geomindr.fragment.main.HomeFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reminder_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0e0e0"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/add_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        fab:menu_colorNormal="@color/colorPrimary"
+        fab:menu_colorPressed="@color/colorPrimary"
+        fab:menu_colorRipple="@color/colorPrimary"
+        fab:menu_animationDelayPerItem="60"
+        fab:menu_fab_label="Add Reminder">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_tbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_colorRipple="@color/colorPrimaryDark"
+            android:src="@drawable/ic_create_white_24dp"
+            fab:fab_label="Task Based Reminder"
+            fab:fab_size="normal" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_ebr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_colorRipple="@color/colorPrimaryDark"
+            android:src="@drawable/ic_location_on_white_24dp"
+            fab:fab_label="Entity Based Reminder"
+            fab:fab_size="normal" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>
